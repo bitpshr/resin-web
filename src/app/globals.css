@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-serif);
+  --font-title: var(--font-title);
+
+  --color-primary: #afbea5;
+  --color-surface: #fffef6;
+  --color-surface-accent: #eeebd2;
+  --color-copy: var(--color-black);
+  --color-copy-on-primary: var(--color-black);
+  --color-copy-subtle: var(--color-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-surface: #1e201d;
+    --color-copy: #fffef6;
+    --color-copy-subtle: #bebdb7;
+    --color-surface-elevated: #3e403d;
+  }
+}
+
+.btn {
+  @apply rounded-full cursor-pointer font-sans uppercase text-lg;
+}
+
+.btn-size-large {
+  @apply text-2xl py-2 px-12  tracking-wider;
+}
+
+.btn-size-small {
+  @apply text-lg py-1 px-8 tracking-wide;
+}
+
+.btn-variant-primary {
+  @apply border-black bg-black text-white;
+}
+
+.btn-variant-secondary {
+  @apply bg-primary text-copy-on-primary border;
+}
+
+.rte h1 {
+  @apply text-4xl md:text-7xl mb-4 md:mb-6;
+}
+
+.rte h2 {
+  @apply text-3xl md:text-5xl mb-4 md:mb-6;
+}
+
+.rte h3 {
+  @apply text-2xl md:text-4xl mb-4 md:mb-6;
+}
+
+.rte h4 {
+  @apply text-xl md:text-3xl mb-4 md:mb-6;
+}
+
+.rte h5 {
+  @apply text-lg md:text-2xl mb-4 md:mb-6;
+}
+
+.rte h6 {
+  @apply text-base md:text-xl mb-4 md:mb-6;
+}
+
+.rte p {
+  @apply mb-6 md:mb-8;
+}
