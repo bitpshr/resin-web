@@ -1,7 +1,7 @@
 export interface FeatureCardProps {
+  description: string;
   icon: React.ReactNode;
   title: string;
-  description: string;
 }
 
 const FeatureCard: React.FC<FeatureCardProps> = ({

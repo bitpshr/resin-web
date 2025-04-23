@@ -2,21 +2,16 @@
 
 import React, { useState } from "react";
 import VisualIndicator from "@/app/components/VisualIndicator";
-import {
-  CalendarIcon,
-  LockClosedIcon,
-  ChevronDownIcon,
-  ChevronUpIcon,
-} from "@heroicons/react/16/solid";
+import { CalendarIcon, LockClosedIcon } from "@heroicons/react/16/solid";
 import { useUIPreferences } from "@/app/context/UIPreferencesContext";
 import { motion, AnimatePresence } from "framer-motion";
 
 export interface FeedItemProps {
   date: string;
   headline: string;
-  summary: string;
-  source: string;
   isLatest?: boolean;
+  source: string;
+  summary: string;
 }
 
 const FeedItem: React.FC<FeedItemProps> = ({
@@ -64,15 +59,8 @@ const FeedItem: React.FC<FeedItemProps> = ({
       >
         <VisualIndicator isLatest={isLatest} />
         <div className="w-full">
-          <div className="md:text-4xl text-2xl text-[26px] mb-5 flex items-start">
-            <div className="flex-grow pr-3">{headline}</div>
-            <div className="flex-shrink-0 flex items-center pt-1 md:pt-2">
-              {isExpanded ? (
-                <ChevronUpIcon className="size-6" />
-              ) : (
-                <ChevronDownIcon className="size-6" />
-              )}
-            </div>
+          <div className="md:text-4xl/11 text-2xl/7 mb-3 md:mb-5 flex items-start font-medium md:font-normal">
+            {headline}
           </div>
           <AnimatePresence>
             {isExpanded && (
@@ -84,7 +72,7 @@ const FeedItem: React.FC<FeedItemProps> = ({
                 style={{ overflow: "hidden" }}
               >
                 <p
-                  className="mb-5 md:mb-6 text-copy-subtle"
+                  className="mb-4 md:mb-6 text-copy-subtle leading-tight font-light text-light"
                   data-testid="feed-summary"
                 >
                   {summary}
@@ -92,7 +80,7 @@ const FeedItem: React.FC<FeedItemProps> = ({
               </motion.div>
             )}
           </AnimatePresence>
-          <div className="text-base flex md:items-center space-x-4 uppercase font-sans flex-col md:flex-row">
+          <div className="text-sm md:text-base flex md:items-center md:space-x-4 uppercase font-sans flex-col md:flex-row">
             <div className="text-copy flex order-3 md:order-1">
               <LockClosedIcon className="size-4 mr-2 flex-none mt-[4px]" />
               {source}
@@ -106,7 +94,7 @@ const FeedItem: React.FC<FeedItemProps> = ({
         </div>
       </div>
       <div className="md:pl-12 pl-8">
-        <div className="border-b border-gray-300 my-12" />
+        <div className="border-b border-gray-300 my-6 md:my-12" />
       </div>
     </>
   );

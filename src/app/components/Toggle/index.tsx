@@ -3,12 +3,12 @@
 import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 
-interface ToggleProps {
-  leftIcon: React.ReactNode;
-  rightIcon: React.ReactNode;
-  onToggle?: (isLeftSelected: boolean) => void;
+export interface ToggleProps {
   initialSelection?: "left" | "right";
   isInverted?: boolean;
+  leftIcon: React.ReactNode;
+  onToggle?: (isLeftSelected: boolean) => void;
+  rightIcon: React.ReactNode;
 }
 
 const Toggle: React.FC<ToggleProps> = ({

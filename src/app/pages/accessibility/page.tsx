@@ -6,15 +6,16 @@ export default function Accessibility() {
   return (
     <ContentLayout
       title="Accessibility"
-      subtitle="Last updated: April 18th, 2024"
+      subtitle="Last updated: April 18th, 2025"
     >
       <ContentSection title="Accessibility Overview">
         <p>
-          At Ghost, we are committed to ensuring digital accessibility for
-          people with disabilities. We are continually improving the user
-          experience for everyone and applying the relevant accessibility
-          standards. Our goal is to provide a website that is accessible to the
-          widest possible audience, regardless of technology or ability.
+          At {APP_CONFIG.appName}, we are committed to ensuring digital
+          accessibility for people with disabilities. We are continually
+          improving the user experience for everyone and applying the relevant
+          accessibility standards. Our goal is to provide a website that is
+          accessible to the widest possible audience, regardless of technology
+          or ability.
         </p>
         <p className="mt-6">
           We aim to conform to level AA of the World Wide Web Consortium (W3C)

@@ -5,11 +5,12 @@
   --font-title: var(--font-title);
 
   --color-primary: #afbea5;
-  --color-surface: #fffef6;
+  --color-surface: var(--color-white);
   --color-surface-accent: #eeebd2;
   --color-copy: var(--color-black);
   --color-copy-on-primary: var(--color-black);
-  --color-copy-subtle: var(--color-black);
+  --color-copy-subtle: #2b2b2b;
+  --color-surface-elevated: #fffef6;
 }
 
 @media (prefers-color-scheme: dark) {

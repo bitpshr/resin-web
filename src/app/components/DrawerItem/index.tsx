@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import Link from "next/link";
 
-interface DrawerItemProps {
-  href: string;
+export interface DrawerItemProps {
   children: React.ReactNode;
+  href: string;
   onClick: () => void;
   size?: "large" | "small";
 }

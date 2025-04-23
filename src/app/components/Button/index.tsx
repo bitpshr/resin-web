@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import LoadingIndicator from "../Loading";
+import LoadingIndicator from "@/app/components/Loading";
 
 type HTMLButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 

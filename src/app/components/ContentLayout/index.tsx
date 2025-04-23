@@ -2,10 +2,10 @@
 
 import React from "react";
 
-interface ContentLayoutProps {
-  title: React.ReactNode;
+export interface ContentLayoutProps {
   children: React.ReactNode;
   subtitle?: string;
+  title: React.ReactNode;
 }
 const ContentLayout: React.FC<ContentLayoutProps> = ({
   title,

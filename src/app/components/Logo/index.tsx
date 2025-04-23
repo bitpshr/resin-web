@@ -1,5 +1,6 @@
 import { FC } from "react";
-interface LogoProps {
+
+export interface LogoProps {
   className?: string;
   invert?: boolean;
   variant?: "full" | "watermark";

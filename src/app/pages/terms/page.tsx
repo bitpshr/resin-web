@@ -6,25 +6,26 @@ export default function TermsOfUse() {
   return (
     <ContentLayout
       title="Terms of Use"
-      subtitle="Last updated: April 18th, 2024"
+      subtitle="Last updated: April 18th, 2025"
     >
       <ContentSection title="Terms Overview">
         <p>
-          Welcome to Ghost. By accessing or using our news aggregation service,
-          you agree to be bound by these Terms of Use. Please read these terms
-          carefully before using our service. If you do not agree to these
-          terms, please do not use our service. We reserve the right to modify
-          these terms at any time, and your continued use of the service
-          following any changes indicates your acceptance of the modified terms.
+          Welcome to {APP_CONFIG.appName}. By accessing or using our news
+          aggregation service, you agree to be bound by these Terms of Use.
+          Please read these terms carefully before using our service. If you do
+          not agree to these terms, please do not use our service. We reserve
+          the right to modify these terms at any time, and your continued use of
+          the service following any changes indicates your acceptance of the
+          modified terms.
         </p>
         <p className="mt-6">
-          Ghost provides a news aggregation service that collects and presents
-          publicly available news content. We do not create or modify the
-          content we aggregate. Our service is provided for informational
-          purposes only and should not be considered as professional advice. We
-          make no representations or warranties about the accuracy,
-          completeness, or reliability of any content provided through our
-          service.
+          {APP_CONFIG.appName} provides a news aggregation service that collects
+          and presents publicly available news content. We do not create or
+          modify the content we aggregate. Our service is provided for
+          informational purposes only and should not be considered as
+          professional advice. We make no representations or warranties about
+          the accuracy, completeness, or reliability of any content provided
+          through our service.
         </p>
       </ContentSection>
 

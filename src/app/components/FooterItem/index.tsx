@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface FooterItemProps extends React.PropsWithChildren {
+export interface FooterItemProps extends React.PropsWithChildren {
   href: string;
 }
 

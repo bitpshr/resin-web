@@ -7,7 +7,7 @@ import classNames from "classnames";
 import DrawerItem from "@/app/components/DrawerItem";
 import Logo from "@/app/components/Logo";
 
-interface DrawerProps {
+export interface DrawerProps {
   isOpen: boolean;
   onClose: () => void;
 }

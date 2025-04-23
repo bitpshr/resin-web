@@ -39,7 +39,7 @@ const Feed: React.FC = () => {
           <LoadingIndicator size="large" />
         </div>
       ) : (
-        <div className="max-w-[1000px] mx-auto md:px-8 pr-8 pl-4">
+        <div className="max-w-[1000px] mx-auto md:px-8 px-3">
           <div className="relative pt-3">
             {/* Article list */}
             {articles.map((article, index) => (

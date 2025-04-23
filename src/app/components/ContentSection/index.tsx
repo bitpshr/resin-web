@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 
-interface ContentSectionProps {
-  title: string;
+export interface ContentSectionProps {
   children: ReactNode;
+  title: string;
 }
 
 const ContentSection: React.FC<ContentSectionProps> = ({

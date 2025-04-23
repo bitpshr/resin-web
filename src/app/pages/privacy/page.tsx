@@ -6,28 +6,37 @@ export default function PrivacyPolicy() {
   return (
     <ContentLayout
       title="Privacy Policy"
-      subtitle="Last updated: April 18th, 2024"
+      subtitle="Last updated: April 18th, 2025"
     >
       <ContentSection title="Privacy Overview">
         <p>
-          At Ghost, we take your privacy seriously. This Privacy Policy explains
-          how we collect, use, disclose, and safeguard your information when you
-          use our news aggregation service. Please read this privacy policy
-          carefully. If you do not agree with the terms of this privacy policy,
-          please do not access the site. We reserve the right to make changes to
-          this Privacy Policy at any time and for any reason. We will alert you
-          about any changes by updating the &quot;Last updated&quot; date of
-          this Privacy Policy.
+          At {APP_CONFIG.appName}, we take your privacy seriously. This Privacy
+          Policy explains how we collect, use, disclose, and safeguard your
+          information when you use our news aggregation service. Please read
+          this privacy policy carefully. If you do not agree with the terms of
+          this privacy policy, please do not access the site. We reserve the
+          right to make changes to this Privacy Policy at any time and for any
+          reason. We will alert you about any changes by updating the &quot;Last
+          updated&quot; date of this Privacy Policy.
         </p>
         <p className="mt-6">
-          Ghost is designed with privacy in mind. We currently do not collect
-          any personal information from our users. Our service operates without
-          requiring user accounts, registration, or the collection of personal
-          data. We do not track your browsing history, location, or any other
-          personal identifiers. The only data we process is the news content
-          itself, which is publicly available information that we aggregate and
-          present in a structured format. This approach ensures that you can use
-          our service with complete confidence in your privacy.
+          {APP_CONFIG.appName} is designed with privacy in mind. We currently do
+          not collect any personal information from our users. Our service
+          operates without requiring user accounts, registration, or the
+          collection of personal data. We do not track your browsing history,
+          location, or any other personal identifiers. The only data we process
+          is the news content itself, which is publicly available information
+          that we aggregate and present in a structured format. This approach
+          ensures that you can use our service with complete confidence in your
+          privacy.
+        </p>
+        <p className="mt-6">
+          Our service is designed to be privacy-focused and does not collect or
+          store any personal information from users of any age. We believe in
+          maintaining a minimal data footprint and have intentionally designed
+          our service to operate without requiring or storing personal data.
+          This approach ensures that all users, regardless of age, can use our
+          service with confidence in their privacy.
         </p>
       </ContentSection>
 
@@ -43,14 +52,15 @@ export default function PrivacyPolicy() {
           experience remains private and secure.
         </p>
         <p className="mt-6">
-          While Ghost itself does not collect personal information, our service
-          may contain links to third-party websites or services. These external
-          sites have their own privacy policies and data collection practices.
-          We encourage you to review the privacy policies of any third-party
-          sites you visit. We are not responsible for the content or privacy
-          practices of these external sites. When you click on a link to a
-          third-party site, you will be subject to that site&apos;s privacy
-          policy and terms of service, which may differ from ours.
+          While {APP_CONFIG.appName} itself does not collect personal
+          information, our service may contain links to third-party websites or
+          services. These external sites have their own privacy policies and
+          data collection practices. We encourage you to review the privacy
+          policies of any third-party sites you visit. We are not responsible
+          for the content or privacy practices of these external sites. When you
+          click on a link to a third-party site, you will be subject to that
+          site&apos;s privacy policy and terms of service, which may differ from
+          ours.
         </p>
       </ContentSection>
 
@@ -67,15 +77,12 @@ export default function PrivacyPolicy() {
           technical infrastructure and our operational procedures.
         </p>
         <p className="mt-6">
-          Our service is not intended for use by children under the age of 13.
-          We do not knowingly collect personal information from children under
-          13. If you are a parent or guardian and believe that your child has
-          provided us with personal information, please contact us, and we will
-          take steps to delete such information from our systems. We encourage
-          parents and guardians to monitor their children&apos;s Internet usage
-          and to help enforce our Privacy Policy by instructing their children
-          never to provide personal information through our service without
-          their permission.
+          Our service is designed to be privacy-focused and does not collect or
+          store any personal information from users of any age. We believe in
+          maintaining a minimal data footprint and have intentionally designed
+          our service to operate without requiring or storing personal data.
+          This approach ensures that all users, regardless of age, can use our
+          service with confidence in their privacy.
         </p>
       </ContentSection>
 
