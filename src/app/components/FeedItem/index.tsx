@@ -72,7 +72,7 @@ const FeedItem: React.FC<FeedItemProps> = ({
                 style={{ overflow: "hidden" }}
               >
                 <p
-                  className="mb-4 md:mb-6 text-copy-subtle leading-tight font-light text-light"
+                  className="mb-4 md:mb-6 leading-tight md:leading-normal font-light md:font-normal"
                   data-testid="feed-summary"
                 >
                   {summary}
@@ -80,20 +80,20 @@ const FeedItem: React.FC<FeedItemProps> = ({
               </motion.div>
             )}
           </AnimatePresence>
-          <div className="text-sm md:text-base flex md:items-center md:space-x-4 uppercase font-sans flex-col md:flex-row">
-            <div className="text-copy flex order-3 md:order-1">
-              <LockClosedIcon className="size-4 mr-2 flex-none mt-[4px]" />
+          <div className="text-copy/50 text-sm md:text-base flex md:items-center md:space-x-4 uppercase font-sans flex-col md:flex-row">
+            <div className="flex order-3 md:order-1">
+              <LockClosedIcon className="size-4 mr-2 flex-none mt-[2px] md:mt-[4px]" />
               {source}
             </div>
             <div className="text-copy/40 h-6 border-gray-300 border-r-1 hidden md:block order-2"></div>
-            <div className="text-copy/80 flex order-1 md:order-3">
-              <CalendarIcon className="size-4 mr-2 flex-none mt-[4px]" />
+            <div className="flex order-1 md:order-3">
+              <CalendarIcon className="size-4 mr-2 flex-none mt-[2px] md:mt-[4px]" />
               {formatDate(date)}
             </div>
           </div>
         </div>
       </div>
-      <div className="md:pl-12 pl-8">
+      <div className="md:pl-12 pl-6">
         <div className="border-b border-gray-300 my-6 md:my-12" />
       </div>
     </>

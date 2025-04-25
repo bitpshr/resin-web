@@ -10,7 +10,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
   description,
 }) => {
   return (
-    <div className="p-6 rounded-lg border border bg-surface dark:bg-primary">
+    <div className="p-6 rounded-lg border-gray border bg-surface dark:bg-primary">
       <div className="rounded-lg p-2 dark:bg-surface bg-primary/40 inline-block text-copy mb-4">
         {icon}
       </div>

@@ -46,7 +46,7 @@ const SubHeader: React.FC = () => {
         className="relative z-30 hidden md:block"
         data-testid="subheader"
       >
-        <div className="max-w-[1000px] mx-auto px-8">
+        <div className="max-w-[1200px] mx-auto px-8">
           <div className="flex justify-between items-center">
             <span className="text-6xl">Latest news</span>
             <div data-testid="subheader-toggle">
@@ -72,7 +72,7 @@ const SubHeader: React.FC = () => {
         data-testid="subheader-scroll"
       >
         <div className="bg-surface-accent w-full border-b-1 border-copy-on-primary">
-          <div className="max-w-[1000px] mx-auto px-4 md:px-8">
+          <div className="max-w-[1200px] mx-auto px-4 md:px-8">
             <div className="flex justify-between items-center py-2">
               <span className="text-2xl md:text-4xl">Latest news</span>
               <div data-testid="subheader-scroll-toggle">

@@ -1,4 +1,4 @@
-import { Lora, Roboto } from "next/font/google";
+import { Lora, Noto_Serif, Roboto } from "next/font/google";
 
 // Article interface
 export interface Article {
@@ -26,10 +26,10 @@ export const fontSans = Roboto({
   weight: ["100", "400", "500", "600", "700"],
 });
 
-export const fontSerif = Lora({
+export const fontSerif = Noto_Serif({
   subsets: ["latin"],
   variable: "--font-serif",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 // App configuration

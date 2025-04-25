@@ -39,7 +39,7 @@ const Feed: React.FC = () => {
           <LoadingIndicator size="large" />
         </div>
       ) : (
-        <div className="max-w-[1000px] mx-auto md:px-8 px-3">
+        <div className="max-w-[1200px] mx-auto md:px-8 pl-3 pr-4">
           <div className="relative pt-3">
             {/* Article list */}
             {articles.map((article, index) => (
@@ -83,7 +83,7 @@ const Feed: React.FC = () => {
             )}
 
             {/* Vertical timeline line */}
-            <div className="border-r border-gray-400 border-dashed h-full absolute left-[7.5px] z-0 top-7" />
+            <div className="border-r border-gray-400 border-dashed h-full absolute md:left-[7.5px] left-[5.5px] z-0 top-7" />
           </div>
         </div>
       )}
