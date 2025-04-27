@@ -23,6 +23,7 @@ const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({
           sizeClassMap[size],
           className
         )}
+        data-testid="loading-indicator"
         role="status"
         aria-label="Loading"
       ></div>

@@ -13,7 +13,10 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className="bg-primary text-copy-on-primary py-2 flex-none relative z-50 h-12 md:h-14 items-center flex border-b border-t border-copy-on-primary">
+      <header
+        className="bg-primary text-copy-on-primary py-2 flex-none relative z-50 h-12 md:h-14 items-center flex border-b border-t border-copy-on-primary"
+        data-testid="header"
+      >
         <div className="w-full px-4 md:px-6 grid grid-cols-3 items-center">
           {/* Left menu */}
           <nav className="flex gap-8 justify-start items-center">
@@ -30,7 +33,7 @@ const Header: React.FC = () => {
           </nav>
 
           {/* App name */}
-          <div className="flex justify-center">
+          <div className="flex justify-center" data-testid="logo-header">
             <Link href="/">
               <Logo className="md:h-10 h-8 w-auto" />
             </Link>

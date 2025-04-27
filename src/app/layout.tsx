@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "@/app/globals.css";
 import { APP_CONFIG, fontSans, fontSerif } from "@/app/common";
 import Header from "@/app/components/Header";
-import Footer from "./components/Footer";
-import { UIPreferencesProvider } from "./context/UIPreferencesContext";
+import Footer from "@/app/components/Footer";
+import { UIPreferencesProvider } from "@/app/context/UIPreferencesContext";
 
 export const metadata: Metadata = {
   title: APP_CONFIG.appName,

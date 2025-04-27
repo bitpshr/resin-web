@@ -7,7 +7,6 @@ type HTMLButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 export interface ButtonProps extends React.PropsWithChildren<HTMLButtonProps> {
   isLoading?: boolean;
-  onClick?: () => void;
   size?: "small" | "large";
   variant?: "primary" | "secondary";
 }
@@ -33,7 +32,8 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       {...htmlButtonProps}
-      disabled={isLoading}
+      data-testid="button"
+      disabled={isLoading || htmlButtonProps.disabled}
       className={`relative btn btn-size-${size} btn-variant-${variant} ${htmlButtonProps.className}`}
     >
       {content}

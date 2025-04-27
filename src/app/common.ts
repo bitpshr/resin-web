@@ -1,4 +1,5 @@
-import { Lora, Noto_Serif, Roboto } from "next/font/google";
+import { Noto_Serif, Roboto } from "next/font/google";
+import * as Sentry from "@sentry/nextjs";
 
 // Article interface
 export interface Article {
@@ -36,19 +37,19 @@ export const fontSerif = Noto_Serif({
 export const APP_CONFIG = {
   appName: "Resin",
   appDescription:
-    "Ghost is an automated system that removes journalists and opinion and surfaces raw news data directly to readers.",
+    "Resin is an automated system that removes journalists and opinion and surfaces fact-only news data directly to readers.",
   email: {
     hello: "hello@resin.news",
     contribute: "contribute@resin.news",
   },
   keywords: [
     "democrat",
+    "headlines",
     "journalism",
     "news feed",
     "news reader",
     "news updates",
     "news",
-    "opinion",
     "politics",
     "republican",
     "unbiased",
@@ -65,6 +66,33 @@ export const ROUTES = {
   search: "/pages/search",
   terms: "/pages/terms",
 };
+
+// Feed configuration
+export const FEED_CONFIG = {
+  maxItems: 1000,
+  pageSize: 20,
+};
+
+// SWR configuration for feed
+export const FEED_SWR_CONFIG = {
+  onError: (error: { status?: number }) => {
+    if (error.status !== 403 && error.status !== 404) {
+      Sentry.captureException(error);
+    }
+  },
+};
+
+/**
+ * Generates the API URL for fetching articles with pagination
+ *
+ * @param pageIndex The current page index
+ * @returns The complete API URL with pagination parameters
+ */
+export function getArticlesUrl(pageIndex: number): string {
+  return `${API_BASE}/articles?limit=${FEED_CONFIG.pageSize}&offset=${
+    pageIndex * FEED_CONFIG.pageSize
+  }`;
+}
 
 /**
  * JSON fetcher for SWR

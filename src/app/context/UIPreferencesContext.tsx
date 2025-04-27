@@ -1,10 +1,7 @@
 /**
  * UIPreferencesContext provides a way to persist UI-related preferences.
  * Used for showing full articles vs. previews.
- *
- * @module UIPreferencesContext
  */
-
 "use client";
 
 import React, { createContext, useContext, useEffect, useState } from "react";

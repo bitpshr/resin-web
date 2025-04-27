@@ -6,7 +6,10 @@ const nextConfig: NextConfig = {
 };
 
 export default withSentryConfig(nextConfig, {
+  // Sentry organization
   org: "resin-ih",
+
+  // Sentry project
   project: "javascript-nextjs",
 
   // Only print logs for uploading source maps in CI

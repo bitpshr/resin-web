@@ -28,6 +28,7 @@ const Logo: FC<LogoProps> = ({
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
+        data-testid="logo-svg"
       >
         <path d="M0 0H76V76H0V0Z" className={backgroundColor} />
         <path
@@ -46,6 +47,7 @@ const Logo: FC<LogoProps> = ({
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
+      data-testid="logo-svg"
     >
       <path d="M0 0H239V76H0V0Z" className={backgroundColor} />
       <path

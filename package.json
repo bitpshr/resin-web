@@ -15,16 +15,14 @@
     "test:e2e:debug": "playwright test --debug"
   },
   "dependencies": {
-    "@heroicons/react": "^2.2.0",
-    "@sentry/nextjs": "^9.13.0",
-    "@types/react-virtualized": "^9.22.2",
-    "classnames": "^2.5.1",
-    "framer-motion": "^12.7.2",
+    "@heroicons/react": "2.2.0",
+    "@sentry/nextjs": "9.13.0",
+    "classnames": "2.5.1",
+    "framer-motion": "12.7.2",
     "next": "15.3.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-virtualized": "^9.22.6",
-    "swr": "^2.3.3"
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "swr": "2.3.3"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

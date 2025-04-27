@@ -1,5 +1,6 @@
 import { test, expect } from "@playwright/test";
 import { FOOTER_LINKS, DRAWER_LINKS, HEADER_LINKS } from "./common";
+
 test.describe("Home page", () => {
   test.beforeEach(async ({ page }) => {
     await page.goto("/");

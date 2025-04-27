@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { useUIPreferences } from "@/app/context/UIPreferencesContext";
 import { ListBulletIcon, DocumentTextIcon } from "@heroicons/react/24/outline";
 
-import Toggle from "../Toggle";
+import Toggle from "@/app/components/Toggle";
 
 const SubHeader: React.FC = () => {
   const [showAltHeader, setShowAltHeader] = useState(false);
