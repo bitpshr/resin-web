@@ -2,7 +2,7 @@
 
 **Resin** is an automated news system that removes journalists and opinions and surfaces fact-only data directly to readers.
 
-[https://resin.news](https://ghost-web-one.vercel.app/))
+[https://resin.news](https://resin.news/)
 
 <img src="src/app/assets/preview.png">
 
