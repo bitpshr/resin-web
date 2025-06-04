@@ -21,9 +21,9 @@ export const UIPreferencesProvider: React.FC<{ children: React.ReactNode }> = ({
   const [showFullArticles, setShowFullArticles] = useState(() => {
     if (typeof window !== "undefined") {
       const saved = sessionStorage.getItem("showFullArticles");
-      return saved ? JSON.parse(saved) : false;
+      return saved ? JSON.parse(saved) : true;
     }
-    return false;
+    return true;
   });
 
   useEffect(() => {
